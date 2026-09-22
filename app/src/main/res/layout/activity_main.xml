@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".MainActivity">
+
+    <!-- Logo Central -->
+    <ImageView
+        android:layout_width="210dp"
+        android:layout_height="77dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:contentDescription="Logo Orion ITAO"
+        android:src="@drawable/senai" />
+
+    <!-- Título do App -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:text="SENAI CALCULATOR"
+        android:textColor="@color/display_text"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <!-- Display -->
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/display_background"
+        android:ellipsize="end"
+        android:gravity="end|center_vertical"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:text="0"
+        android:textColor="@color/display_text"
+        android:textSize="42sp" />
+
+    <!-- Linha 1: Memória -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_mc"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_memory"
+            android:text="MC" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_mr"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_memory"
+            android:text="MR" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_m_plus"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_memory"
+            android:text="M+" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_m_minus"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_memory"
+            android:text="M-" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_ms"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_memory"
+            android:text="MS" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_mv"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_memory"
+            android:text="Mv" />
+    </LinearLayout>
+
+
+</LinearLayout>
